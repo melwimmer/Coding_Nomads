@@ -1,0 +1,40 @@
+Create a new folder. Inside of that folder:
+1. Create a new Python virtual environment
+2. Activate the virtual environment
+3. Install three external packages in the virtual environment.
+4. Freeze the installed packages to a `requirements.txt` file.
+5. Deactivate the virtual environment.
+6. Delete the virtual environment.
+7. Create a new virtual environment.
+8. Install the packages that you recorded in the `requirements.txt` file.
+
+# new folder:
+import pathlib
+
+new_path = pathlib.Path("/home/meme/python-201-main/python-201-main/05_venvs-and-packages/test")
+new_path.mkdir(exist_ok=True)
+
+or in terminal:
+mkdir nombredelnuevofolder
+
+#call the correct directory: cd bla 
+
+Making the virtual environment:
+python3 -m venv nombre de mi environment
+
+#activaste the virtual environment:
+ source your_env_name/bin/activate
+
+#installing packages:
+python3 -m pip install numpy
+
+#freeze:
+python -m pip freeze > requirements.txt  
+
+#Deleting:
+deactivate
+
+rm -rf myvenv/
+
+#install the packages:
+python -m pip install -r requirements.txt

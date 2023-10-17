@@ -1,0 +1,4 @@
+{'.appref-ms': 1, '': 4, '.ini': 1, '.lnk': 8, '.MX]': 1, '.JPG': 2}
+{'.appref-ms': 1, '': 4, '.ini': 1, '.lnk': 8, '.MX]': 1, '.JPG': 2}
+{'.appref-ms': 1, '': 4, '.ini': 1, '.lnk': 8, '.MX]': 1, '.JPG': 2}
+{'.appref-ms': 1, '': 4, '.ini': 1, '.lnk': 8, '.MX]': 1, '.JPG': 1}

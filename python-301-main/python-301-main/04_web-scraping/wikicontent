@@ -1,0 +1,51 @@
+
+
+
+
+From Wikipedia, the free encyclopedia
+
+
+Change detection and notification (CDN) is the automatic detection of changes made to World Wide Web pages and notification to interested users by email or other means.[1]
+Whereas search engines are designed to find web pages, CDN systems are designed to monitor changes to web pages. Before change detection and notification, it was necessary for users to manually check for web page changes, either by revisiting web sites or periodically searching again. Efficient and effective change detection and notification is hampered by the fact that most servers do not accurately track content changes through Last-Modified or ETag web-server headers. In 2019 a comprehensive analysis regarding CDN systems was published.
+
+
+History[edit]
+In 1996, NetMind developed the first change detection and notification tool, known as Mind-it, which ran for six years. This spawned new services such as ChangeDetection (1999), ChangeDetect (2002), Google Alerts (2003), and Versionista (2007) which was used by the John McCain 2008 presidential campaign in the race for the 2008 United States presidential election.[2] Historically, change polling has been done either by a server which sent email notifications or a desktop program which audibly alerted the user to a change. Change alerting is also possible directly to mobile devices and through push notifications, webhooks and HTTP callbacks for application integration.
+Monitoring options vary by service or product and range from monitoring a single web page at a time to entire web sites.  What is actually monitored also varies by service or product with the possibilities of monitoring text, links, documents, scripts, images or screen shots.
+With the notable exception of Google's patent filings related to Google Alerts, intellectual property activity by change detection and notification vendors is minimal.[3]  No one vendor has successfully leveraged exclusive rights to change detection and notification technology through patents or other legal means.[citation needed]  This has resulted in significant functional overlap between products and services.
+
+Architectural approaches[edit]
+Change detection and notification services can be categorized by the software architecture they use. Three principal approaches can be distinguished:
+
+Server based[edit]
+A server polls content, tracks changes and logs data, sending alerts in the form of email notifications, webhooks, RSS. Typically, an associated website with a configuration is managed by the user.  Some services also have a mobile device application which connects to a cloud server and provides alerts to the mobile device.
+
+Self-hosted based[edit]
+A relatively newer approach, which lays between server-based and client-based is to use self-hosting, where the software which would normally run on a separate server runs on your own hardware locally, generally means that the software provides a miniature web server with a browser interface instead of a classic graphical user interface provided by an application.
+
+Client based[edit]
+A local client application with a graphical user interface polls content, tracks changes and logs data. Client applications can be browser extensions, mobile apps or programs.
+
+Considerations[edit]
+Some web pages change regularly, due to the inclusion of adverts or feeds in the presented page. This can trigger false-positives in the change-detection, since users are often only interested in changes to the main content. Some approaches to mitigate this issue exist.
+
+Create a metric of difference between two versions of a page (calculated for example from change in total size, changes in HTML file, or changes in the DOM tree) and ignore changes below some threshold. The threshold may be set by the user, or estimated automatically by comparing some early versions of the page.
+Content extraction. For popular sites, or sites running popular software, content may be actively separated from chaff by selecting a sub-tree of the DOM, for example using XPath. Another typical method is the use of regular expressions to extract only the text the user is interested in.
+References[edit]
+
+
+^ Mallawaarachchi, Vijini; Meegahapola, Lakmal; Alwis, Roshan; Heshan, Eranga; Meedeniya, Dulani; Jayarathna, Sampath (2020-05-14). Change Detection and Notification of Web Pages: A Survey. arXiv:1901.02660. Bibcode:2019arXiv190102660M. doi:10.1145/3369876. OCLC 1201518429. S2CID 57759312.
+
+^ "To the Wayback Machine, Sherman!". The Economist. Retrieved 9 January 2019.
+
+^ "He created Google Alerts. Now he's an almond farmer". CNN. 4 April 2016. Retrieved 9 September 2016.
+
+
+Chakravarthy, S.; Hara, S. C. H. (2006). "Automating Change Detection and Notification of Web Pages (Invited Paper)". 17th International Conference on Database and Expert Systems Applications (DEXA'06). p. 465. doi:10.1109/DEXA.2006.34. ISBN 0-7695-2641-1. S2CID 6395251.
+Shobhna, Bansal; Chadhaury, Manoj (June 2013). "A Survey on Web Page Change Detection System Using Different Approaches" (PDF). International Journal of Computer Science and Mobile Computing. IJCSMC. 2 (6): 294–299. ISSN 2320-088X. Retrieved 8 September 2016.
+
+
+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Change_detection_and_notification&oldid=1163389177"
+Category: Change detection and notificationHidden categories: All articles with unsourced statementsArticles with unsourced statements from September 2016

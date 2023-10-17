@@ -1,0 +1,26 @@
+Clients:
+    client id (pk)
+    client name
+    client last name
+    client email
+    client phnumber
+
+Flights:
+    Flight ID (pk)
+    Flight number
+    Destination
+    Flight time
+    Airport
+
+Hotels:
+    Hotel ID (pk)
+    Hotel name
+    Hotel location
+    Hotel rating
+
+Client Vacation
+    Vacation id (pk)
+    Hotel ID (fk)
+    Flight id (fk)
+    Client ID (fk)
+    vacation date

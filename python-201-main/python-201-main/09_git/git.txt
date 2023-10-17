@@ -1,0 +1,42 @@
+$ git init
+# Running this command creates a new Git repository in the directory you are currently in.
+# I have to be in the folder I want to initiate the repository. 
+
+mkdir: makes a new folder in the location that I'm in. 
+
+$ git status
+gives you the status
+
+ls -al 
+lists all the files within the folder
+
+echo "# git practice" >> README.md 
+# This command will put the string # git practice into a new file called README.md. What you see here are bash CLI commands, and not related to Git
+
+git add <and then file name>
+# used to add the changes and modifications made in the working directory to the Git staging area
+# I can also do: git add <file 1> <file 2> <file 3>
+# if I only want to add the .txt files, I can also do git add *.txt or whatever type of file it is.
+# if I want to add all the files, I can do git add . (with the period)
+
+# I can undo a git add command with git reset
+
+# touch <name of the file> creates a new file
+
+git commit
+#The git commit command is used to add all changes in the staging area to the local Git repository
+
+the way to go is:
+git commit -m "Type a message of what the changes you are doing are."
+
+
+git commit -a: This command commits all the changes made in the working directory. It skips the git add step. It only includes modifications to files that have been added with git add at some point in their history, also called tracked files. The command is a mix of git add and git commit
+git commit -am "Commit message": This command is a power-user shortcut command that combines the -a and -m options. The combination immediately creates a commit of all the staged changes and allows you to pass an inline commit message
+
+The --amend flag allows you to change your last commit message. 
+
+Keep in mind that you can always use --help to see the full manual of a Git command
+
+You can also run git add --help, git clone --help, etc. for information on any other Git command. The --help argument will print out the documentation for the given command
+
+The git log command will show you the history of Git commits for your current project
